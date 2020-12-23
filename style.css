@@ -1,0 +1,732 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-seri;
+}
+ul{
+    list-style-type: none;
+}
+#header{
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.4s;
+    z-index: 99;
+}
+#header:hover{
+    background-color: #3d405b; 
+}
+#header.scrolled{
+       background-color: #3d405b; 
+}
+#header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+#header #logo a{
+    font-size: 2em;
+    padding: 25px;
+    display: inline-block;
+    padding-left: 40px; 
+}
+#header #navigation{
+padding: 10px;
+    
+}
+#header #navigation li{
+    display: inline-block;
+    padding: 5px;
+    font-weight:600;
+}
+#header #navigation a{
+    transition: background-color 0.6s;
+    padding: 15px;
+}
+
+#header #logo{
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+#header #navigation a:hover{
+    background-color: rgba(0,0,0,.3);
+}
+/*intro section starts*/
+#intro{
+    background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url(2.jpg);
+    min-height: 680px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.intro-text{
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    display: block;
+}
+.intro-text-int{
+    font-size: 1.7em;
+    margin-bottom: 50px;
+}
+.intro-text-int strong,
+.intro-text-int em{
+    color: #e07a5f;
+}
+.intro-text-int h1{
+    color: white;
+}
+.call-to-action{
+    padding: 10px;
+    margin: 20px 0px;
+    display: block;
+}
+.call-to-action .btn-bg-1{
+    background-color:#e07a5f;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+.call-to-action .btn-highlight-1{
+    background-color:#3d405b;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+.call-to-action .btn-bg-1:hover,
+.call-to-action .btn-highlight-1:hover{
+    background-color: rgba(0,0,0,.7);
+}
+/*intro section ends*/
+
+
+/*About me section starts*/
+#about-me{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url(7.jpg);
+    min-height: 1200px;
+    padding: 15px;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+#about-me .whoiam-img{
+    margin-top: 50px;
+    background-size: cover;
+}
+.whoiam-text h4{
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.whoiam-text p{
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+#service .section-title{
+    font-size: 2.3em;
+    margin-bottom: 60px;
+}
+.service{
+    padding: 40px;
+    margin: 30px;
+    display: inline-block;
+    width: 47%;
+    margin: auto;
+}
+.service-icon{
+    padding: 25px;
+    background-color: rgba(0,0,0,.4);
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 50px;
+    outline: 5px solid transparent;
+    transform: rotate(45deg);
+    transition: background-color 0.4s, outline-offset 0.4s, outline 0.4s;
+}
+.service-icon img{
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.service:hover .service-icon{
+    background-color: #e07a5f;
+    outline-offset: 5px;
+    outline: 5px solid #e07a5f ;
+}
+.service-title{
+    font-size: 1.7em;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.service-desc{
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.service:hover .service-desc{
+    opacity: 1;
+}
+
+/*About me section ends*/
+/*History section starts*/
+#history{
+    background-color: #e07a5f;
+    color: white;
+    padding: 20px;
+
+}
+
+
+#history #section-title{
+    font-size: 2.3em;
+    margin-bottom: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.history-title{
+    font-size: 1.3em;
+    padding: 20px 0px;
+}
+.history-title .icon{
+    display: inline-block;
+}
+.history-title .text{
+    display: inline-block;
+}
+.event{
+    margin: 30px 0px;
+}
+.event-date{
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: 0.9;
+    padding: 10px 30px;
+}
+.event-title{
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.event-result{
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1.1em;
+    padding: 10px 30px;
+}
+.event-desc{
+    width: 70%;
+    padding: 10px 30px;
+}
+.history-education{
+    display: inline-block;
+    width: 47%;
+}
+.event{
+    position: relative;
+}
+.events-container::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 80%;
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+}
+.event-date:before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #3d405b;
+    position: absolute;
+    left: 1px;
+}
+#history .call-to-action{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+/*History section ends*/
+/*skills start*/
+#skills{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(10.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+.soft-skill .section-title,
+.technical-skill .section-title{
+    font-size: 2.4em;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+.soft-skill .skill{
+    position: relative;
+}
+.skill-icon-1{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 10px solid #e07a5f;
+    border-bottom: 0px solid transparent;
+    
+}
+
+.soft-skill .skill{
+    display: inline-block;
+    padding: 100px;
+}
+.skill-rating-1{
+    position: absolute;
+    right: 130px;;
+    top: 175px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.skill-rating-1-1{
+    position: absolute;
+    right: 170px;;
+    top: 175px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.skill-rating-1-2{
+    position: absolute;
+    right: 195px;;
+    top: 175px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.soft-skill .skill-title{
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.technical-skill .skill-rating{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.technical-skill .skill-title{
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.technical-skill .skill{
+    display: inline-block;
+    width: 20%;
+    padding: 40px;
+    position: relative;
+    margin:0px 30px;
+}
+.technical-skill .skill-icon:before{
+    content: '';
+    width: 100%;
+    background-color:rgba(0,0,0,.6);
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    
+}
+.technical-skill .skill-icon:after{
+    content: '';
+    width: 80%;
+    background-color:#e07a5f;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+/*skills end*/
+/*portfolio starts*/
+#portfolio{
+    background-color: gainsboro;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+#portfolio .section-title{
+    font-size: 2.4em;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.work{
+    background-image: url(10.jpg);
+    background-size: cover;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+    width: 393px;
+    height: 300px;
+    transition: background-image 0.4s;
+    
+}
+.work:hover{
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(10.jpg);
+    background-size: cover;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+    width: 393px;
+    height: 300px;
+}
+.work h4{
+    text-align: center;
+    font-size: 1.4em;
+    border-bottom: 1px solid black;
+    opacity: 0;
+    transition: opacity 0.7s;
+    color: white;
+}
+.work p{
+     padding: 40px 0px;
+    opacity: 0;
+    transition: opacity 0.7s;
+    color: white;
+}
+.work:hover p,
+.work:hover h4{
+    opacity: 1;
+}
+/*portfolio ends*/
+/*by numbers start*/
+#by-numbers{
+    padding: 20px;
+}
+#by-numbers .section-title{
+    font-size: 2.4em;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fact-container{
+    display: inline-block;
+    width:24%;
+    margin: 5px;
+    text-align: center;
+}
+.fact-icon img{
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.fact-text{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+/*by number ends*/
+#testimonial{
+    background-color: #191c35;
+    color: white;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+#testimonial .section-title{
+    font-size: 2.4em;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.testimonial{
+    display: inline-block;
+    background-color: #3d405b;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 15px(rgba(0,0,0,0.3));
+    border-radius: 10px;
+}
+.testimonial-author img{
+    border-radius: 50%;
+    border: 7px solid rgba(0,0,0,.3);
+    border-bottom: 7px solid #e07a5f;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+#testimonial .name{
+    margin-top: 80px;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#testimonial .position{
+    margin-bottom: 40px;
+ font-style: italic;
+    
+}
+#testimonial .text{
+    padding: 60px;
+    position: relative;
+}
+#testimonial .icon{
+    position: absolute;
+    top: 260px;
+    left:70px;
+}
+/*blog starts*/
+#blog{
+    background-color: gainsboro;
+    padding: 20px;
+}
+#blog .section-title{
+    font-size: 2.4em;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#blog .post{
+    margin: 20px ;
+    box-shadow:2px 2px 15px rgba(0,0,0,.4);
+    width: 30%;
+    display: inline-block;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+#blog .post-img img{
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    position:
+}
+#blog .author-img img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    border: 5px solid rgba(0,0,0,.7);
+    border-bottom: 5px solid #e07a5f;
+} 
+.author-name{
+    position: relative;
+    top: -40px;
+}
+.author-job{
+    position: relative;
+    top:-30px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.post-title{
+    position: relative;
+    top: -10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.post-reaction{
+    background-color: rgba(0,0,0,.2);
+    margin-top: 51px;
+    height: 35px;
+}
+.reaction .icon img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 33px;
+    top: 5px;
+}
+.reaction{
+    width: 30%;
+    display: inline-block;
+}
+.reaction .text{
+    position: relative;
+    top: -20px;
+}
+#blog .post-1{
+    margin: auto;
+    box-shadow:2px 2px 15px rgba(0,0,0,.4);
+    width: 30%;
+
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+/*blog ends*/
+/*get-in-touch start*/
+
+#get-in-touch{
+    background-color: #191c35;
+    padding-top: 40px;
+}
+
+
+#get-in-touch .service{
+    padding: 50px 10px;
+    margin: 30px 10px;
+    display: inline-block;
+    width: 33%;
+    margin: auto;
+    text-align: center;
+}
+#get-in-touch .service-icon{
+    background-color: rgba(0,0,0,.4);
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 50px;
+    outline: 5px solid transparent;
+    transform: rotate(45deg);
+}
+#get-in-touch .service-icon img{
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#get-in-touch .service-title{
+    font-size: 1.7em;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+#get-in-touch .service-desc-1{
+    padding: 10px;
+    color: white;
+}
+    
+/*contact start*/
+#contact{
+    background-color: gainsboro;
+
+    padding-bottom: 30px;
+}
+   
+#contact .section-title{
+    font-size: 2.4em;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+form{
+    width: 60%;
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+     border: 3px solid transparent;
+    transition: border 0.5s;
+}
+form textarea{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    border: 3px solid transparent;
+    transition: border 0.5s;
+}
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus{
+    border :3px solid #e07a5f;
+}
+form button{
+    color: white;
+    background-color: #e07a5f;
+    padding: 20px;
+    margin: 40px 0px;
+    width: 350px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+/*contact ends*/
+/*footer start*/
+#footer{
+    padding: 20px;
+    background-color: #191c35;
+    color: white;
+    text-align: center;
+}
+#footer .link img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    border: 5px solid transparent;
+    transition: border 0.4s;
+    
+}
+#footer .social-links{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+#footer .link{
+    display: inline-block;
+    width: 20%;
+}
+#footer .link img:hover{
+    border:5px solid #e07a5f;
+}
+/*footer ends*/
+
+
+/*fet-in-touch ends*/
